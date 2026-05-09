@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team Year Plan 2026–27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --surface2: #F0EDE6;
+  --border: rgba(0,0,0,0.1);
+  --border-strong: rgba(0,0,0,0.2);
+  --text: #1A1714;
+  --text-2: #5A5650;
+  --text-3: #9A9590;
+  --accent: #2D5016;
+  --accent-light: #EAF3DE;
+  --lit: #3C3489;
+  --lit-bg: #EEEDFE;
+  --lit-mid: #7F77DD;
+  --math: #0C447C;
+  --math-bg: #E6F1FB;
+  --math-mid: #378ADD;
+  --inq: #27500A;
+  --inq-bg: #EAF3DE;
+  --inq-mid: #639922;
+  --arts: #72243E;
+  --arts-bg: #FBEAF0;
+  --arts-mid: #D4537E;
+  --phys: #085041;
+  --phys-bg: #E1F5EE;
+  --phys-mid: #1D9E75;
+  --adst: #712B13;
+  --adst-bg: #FAECE7;
+  --adst-mid: #D85A30;
+  --amber: #633806;
+  --amber-bg: #FAEEDA;
+  --amber-mid: #BA7517;
+  --t1: #3C3489;
+  --t1-bg: #EEEDFE;
+  --t2: #085041;
+  --t2-bg: #E1F5EE;
+  --t3: #633806;
+  --t3-bg: #FAEEDA;
+  --radius: 10px;
+  --radius-sm: 6px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ── HEADER ── */
+.app-header {
+  background: var(--accent);
+  color: #fff;
+  padding: 2rem 2.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.app-header::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; left: 40%;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.header-inner { position: relative; z-index: 1; }
+.header-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .7;
+  margin-bottom: 6px;
+}
+.header-title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+.header-sub {
+  font-size: 13px;
+  opacity: .75;
+  max-width: 520px;
+  line-height: 1.5;
+}
+.header-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 1rem;
+}
+.header-pill {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ── NAV ── */
+.nav {
+  background: var(--surface);
+  border-bottom: 0.5px solid var(--border);
+  padding: 0 2.5rem;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  padding: 14px 16px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-btn svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+.nav-btn.on {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+  font-weight: 500;
+}
+.nav-btn:hover:not(.on) { color: var(--text); background: var(--bg); }
+
+/* ── MAIN ── */
+.main { padding: 2rem 2.5rem; max-width: 1100px; }
+
+/* ── VIEWS ── */
+.view { display: none; animation: fadeIn .2s ease; }
+.view.on { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── LEGEND ── */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  padding: 12px 16px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 0.5px solid var(--border);
+}
+.leg { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-2); }
+.leg-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── YEAR OVERVIEW ── */
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+.month-card {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .15s, transform .12s;
+}
+.month-card:hover { border-color: var(--border-strong); transform: translateY(-1px); }
+.month-card.active { border-color: var(--accent); border-width: 1.5px; }
+.month-head {
+  padding: 10px 13px 9px;
+  border-bottom: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.month-name { font-size: 13.5px; font-weight: 500; }
+.term-pill {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.t1-pill { background: var(--t1-bg); color: var(--t1); }
+.t2-pill { background: var(--t2-bg); color: var(--t2); }
+.t3-pill { background: var(--t3-bg); color: var(--t3); }
+.month-body { padding: 10px 13px 12px; }
+.month-unit {
+  font-size: 11.5px;
+  color: var(--text-2);
+  margin-bottom: 4px;
+  padding-left: 13px;
+  position: relative;
+  line-height: 1.45;
+}
+.month-unit::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+}
+.u-inq::before { background: var(--inq-mid); }
+.u-lit::before { background: var(--lit-mid); }
+.u-math::before { background: var(--math-mid); }
+.u-phys::before { background: var(--phys-mid); }
+.month-dates { font-size: 11px; color: var(--text-3); margin-top: 8px; }
+
+/* ── DETAIL PANEL ── */
+.detail-panel {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: none;
+  animation: fadeIn .2s ease;
+}
+.detail-panel.on { display: block; }
+.dp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.dp-title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.dp-meta { font-size: 12px; color: var(--text-3); margin-top: 3px; }
+.close-btn {
+  background: var(--surface2);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-2);
+  font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0;
+  transition: background .15s;
+}
+.close-btn:hover { background: var(--border); }
+.dp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.dp-block {
+  border-radius: var(--radius-sm);
+  padding: 11px 13px;
+  border: 0.5px solid transparent;
+}
+.dp-block-label {
+  font-size: 10.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dp-block-label svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; flex-shrink: 0; }
+.dp-block-text { font-size: 12px; line-height: 1.6; }
+.b-inq { background: var(--inq-bg); color: var(--inq); border-color: #97C459; }
+.b-lit { background: var(--lit-bg); color: var(--lit); border-color: #AFA9EC; }
+.b-math { background: var(--math-bg); color: var(--math); border-color: #85B7EB; }
+.b-arts { background: var(--arts-bg); color: var(--arts); border-color: #ED93B1; }
+.b-phys { background: var(--phys-bg); color: var(--phys); border-color: #5DCAA5; }
+.b-adst { background: var(--adst-bg); color: var(--adst); border-color: #F0997B; }
+.big-idea-strip {
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  font-size: 12.5px;
+  color: var(--inq);
+  line-height: 1.55;
+  border-radius: 0;
+}
+.big-idea-strip strong { font-weight: 500; }
+
+/* ── WEEKLY VIEW ── */
+.week-table {
+  display: grid;
+  grid-template-columns: 70px repeat(5, 1fr);
+  gap: 0;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+.wt-head {
+  background: var(--surface2);
+  padding: 9px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-3);
+  border-right: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  text-align: center;
+}
+.wt-time {
+  padding: 0 8px;
+  font-size: 10.5px;
+  color: var(--text-3);
+  border-right: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  line-height: 1.3;
+  background: var(--surface2);
+}
+.wt-cell {
+  padding: 7px 9px;
+  border-right: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+.wt-cell:last-child, .wt-time:last-child { border-right: none; }
+.wt-title { font-weight: 500; margin-bottom: 2px; }
+.wt-sub { font-size: 10.5px; opacity: .85; }
+.wt-break { background: var(--surface2); color: var(--text-3); }
+.wt-morn { background: var(--amber-bg); color: var(--amber); }
+.wt-lit { background: var(--lit-bg); color: var(--lit); }
+.wt-math { background: var(--math-bg); color: var(--math); }
+.wt-inq { background: var(--inq-bg); color: var(--inq); }
+.wt-arts { background: var(--arts-bg); color: var(--arts); }
+.wt-phys { background: var(--phys-bg); color: var(--phys); }
+
+/* ── FRAMEWORK VIEW ── */
+.fw-section { margin-bottom: 2rem; }
+.fw-section-title {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 0.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fw-section-title .pill {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+.fw-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+}
+.fw-card {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  border-top: 3px solid var(--border);
+}
+.fw-card-name { font-size: 13px; font-weight: 500; margin-bottom: 6px; }
+.fw-card-desc { font-size: 12px; color: var(--text-2); line-height: 1.55; }
+.fw-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.fw-tag { font-size: 10.5px; padding: 2px 7px; border-radius: 20px; background: var(--surface2); color: var(--text-3); border: 0.5px solid var(--border); }
+.cafe-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.cafe-card {
+  border-radius: var(--radius);
+  padding: 1rem;
+  border: 0.5px solid transparent;
+}
+.cafe-letter { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
+.cafe-name { font-size: 12px; font-weight: 500; margin-bottom: 6px; }
+.cafe-strats { font-size: 11.5px; line-height: 1.65; }
+
+/* Design thinking phases */
+.dt-phases {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.dt-phase {
+  padding: 1rem;
+  border-right: 0.5px solid var(--border);
+  text-align: center;
+}
+.dt-phase:last-child { border-right: none; }
+.dt-num {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dt-phase-name { font-size: 12.5px; font-weight: 500; margin-bottom: 4px; }
+.dt-phase-q { font-size: 11px; color: var(--text-2); font-style: italic; line-height: 1.4; }
+
+.note-box {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 11px 15px;
+  font-size: 12.5px;
+  color: var(--text-2);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.note-box strong { color: var(--text); font-weight: 500; }
+
+/* ── INQUIRY+DESIGN EXPLAINER ── */
+.idf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.idf-card {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.idf-card-title {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+.idf-card p { font-size: 12.5px; color: var(--text-2); line-height: 1.6; }
+.idf-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--text-3);
+  font-style: italic;
+}
+
+/* ── ASSESSMENT VIEW ── */
+.assess-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+.assess-card {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+}
+.assess-icon { font-size: 22px; margin-bottom: 8px; }
+.assess-name { font-size: 13px; font-weight: 500; margin-bottom: 5px; }
+.assess-desc { font-size: 12px; color: var(--text-2); line-height: 1.55; }
+.term-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+.tt-card {
+  background: var(--surface);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tt-head {
+  padding: 9px 13px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.tt-body { padding: 10px 13px 12px; }
+.tt-item { font-size: 12px; color: var(--text-2); padding-left: 12px; position: relative; margin-bottom: 4px; line-height: 1.45; }
+.tt-item::before { content: '–'; position: absolute; left: 0; color: var(--text-3); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+  .app-header { padding: 1.5rem; }
+  .header-title { font-size: 24px; }
+  .main { padding: 1.25rem; }
+  .nav { padding: 0 1.25rem; }
+  .cafe-grid { grid-template-columns: repeat(2, 1fr); }
+  .idf-grid { grid-template-columns: 1fr; }
+  .idf-vs { display: none; }
+  .week-table { font-size: 10px; }
+  .term-timeline { grid-template-columns: 1fr; }
+}
+
+.divider { border: none; border-top: 0.5px solid var(--border); margin: 1.5rem 0; }
+</style>
+</head>
+<body>
+
+<div class="app-header">
+  <div class="header-inner">
+    <div class="header-eyebrow">Grades 4 & 5 · British Columbia Curriculum · 2026–2027</div>
+    <div class="header-title">Our Team Year Plan</div>
+    <div class="header-sub">One team, one set of driving questions. Daily 5 & CAFE for literacy. Math Daily 3 for numeracy. Inquiry into Action for everything else.</div>
+    <div class="header-pills">
+      <span class="header-pill">Daily 5 & CAFE</span>
+      <span class="header-pill">Math Daily 3</span>
+      <span class="header-pill">Inquiry into Action</span>
+      <span class="header-pill">BC Learning Pathways</span>
+      <span class="header-pill">Sept 2026 – Jun 2027</span>
+    </div>
+  </div>
+</div>
+
+<nav class="nav">
+  <button class="nav-btn on" onclick="setView('year',this)">
+    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    Year overview
+  </button>
+  <button class="nav-btn" onclick="setView('week',this)">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+    Typical week
+  </button>
+  <button class="nav-btn" onclick="setView('frameworks',this)">
+    <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    Frameworks
+  </button>
+  <button class="nav-btn" onclick="setView('inquiry',this)">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    Inquiry into Action
+  </button>
+  <button class="nav-btn" onclick="setView('assessment',this)">
+    <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    Assessment
+  </button>
+</nav>
+
+<div class="main">
+
+<!-- ═══════════════════ YEAR OVERVIEW ═══════════════════ -->
+<div id="view-year" class="view on">
+  <div class="legend">
+    <div class="leg"><div class="leg-dot" style="background:#7F77DD"></div>Daily 5 / CAFE</div>
+    <div class="leg"><div class="leg-dot" style="background:#378ADD"></div>Math Daily 3</div>
+    <div class="leg"><div class="leg-dot" style="background:#639922"></div>Integrated inquiry</div>
+    <div class="leg"><div class="leg-dot" style="background:#1D9E75"></div>PHE</div>
+    <div class="leg"><div class="leg-dot" style="background:#D4537E"></div>Arts</div>
+    <div class="leg"><div class="leg-dot" style="background:#D85A30"></div>ADST / Career Ed</div>
+  </div>
+  <div class="detail-panel" id="detail-panel">
+    <div class="dp-header">
+      <div>
+        <div class="dp-title" id="dp-title"></div>
+        <div class="dp-meta" id="dp-meta"></div>
+      </div>
+      <button class="close-btn" onclick="closeDetail()">✕ Close</button>
+    </div>
+    <div class="dp-grid" id="dp-grid"></div>
+    <div id="dp-bigidea"></div>
+  </div>
+  <div class="months-grid" id="months-grid"></div>
+</div>
+
+<!-- ═══════════════════ TYPICAL WEEK ═══════════════════ -->
+<div id="view-week" class="view">
+  <div class="note-box">The integrated inquiry block is the engine — it weaves Science, Social Studies, Arts, PHE, ADST, and Career Ed together every afternoon. <strong>Everyone works from the same driving question.</strong> Differentiation happens inside Daily 5 conferring and Math Daily 3 small groups — not by splitting the team.</div>
+  <div class="week-table" id="week-table"></div>
+</div>
+
+<!-- ═══════════════════ FRAMEWORKS ═══════════════════ -->
+<div id="view-frameworks" class="view">
+
+  <div class="fw-section">
+    <div class="fw-section-title">
+      Daily 5 — literacy independence structure
+      <span class="pill" style="background:var(--lit-bg);color:var(--lit)">90 min daily</span>
+    </div>
+    <div class="fw-cards" id="d5-cards"></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="fw-section">
+    <div class="fw-section-title">
+      CAFE — reading & writing strategy menu
+      <span class="pill" style="background:var(--lit-bg);color:var(--lit)">Conferring framework</span>
+    </div>
+    <div class="cafe-grid" id="cafe-cards"></div>
+    <div class="note-box" style="margin-top:1rem"><strong>CAFE + inquiry:</strong> Every inquiry unit's non-fiction anchor texts are the vehicle for whole-group CAFE lessons. Strategies are never taught in isolation — they are always practised on texts that serve the team's current big question.</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="fw-section">
+    <div class="fw-section-title">
+      Math Daily 3 — numeracy independence structure
+      <span class="pill" style="background:var(--math-bg);color:var(--math)">60 min daily</span>
+    </div>
+    <div class="fw-cards" id="m3-cards"></div>
+    <div class="note-box" style="margin-top:1rem"><strong>Math Daily 3 + inquiry:</strong> Math Writing prompts draw directly from the inquiry unit. During the ecosystems unit students calculate food web ratios. During "Our Canada" they budget their exhibition display. The framework is the structure — BC curriculum content is what fills it.</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════ INQUIRY INTO ACTION ═══════════════════ -->
+<div id="view-inquiry" class="view">
+
+  <div class="note-box"><strong>Why "Inquiry into Action"?</strong> Inquiry (ask questions, investigate, make sense) and Design Thinking (empathize, define, ideate, prototype, test) are not competing frameworks — they are complementary. Inquiry generates the <em>why</em> and <em>what</em>. Design thinking structures the <em>how</em>. Together they avoid inquiry that stays abstract, and design thinking that lacks genuine purpose. BC's curriculum is built for exactly this combination.</div>
+
+  <div class="idf-grid">
+    <div class="idf-card" style="border-top:3px solid var(--inq-mid)">
+      <div class="idf-card-title">Inquiry framework</div>
+      <p>Students ask authentic questions about the world, investigate through observation and research, make sense of evidence, and communicate their understanding. Driven by curiosity and real questions.</p>
+      <div style="margin-top:.75rem;font-size:11.5px;color:var(--text-3);font-weight:500">ASKS: What do we wonder? What evidence do we have? What does it mean?</div>
+    </div>
+    <div class="idf-vs">+</div>
+    <div class="idf-card" style="border-top:3px solid var(--adst-mid)">
+      <div class="idf-card-title">Design thinking framework</div>
+      <p>Students empathize with a real need, define a problem, generate many ideas, build prototypes, and test and improve. Driven by a desire to make something that works for someone.</p>
+      <div style="margin-top:.75rem;font-size:11.5px;color:var(--text-3);font-weight:500">ASKS: Who needs this? What could we make? Does it work? How can we improve it?</div>
+    </div>
+  </div>
+
+  <div class="fw-section">
+    <div class="fw-section-title">The six phases — Inquiry into Action</div>
+    <div class="dt-phases" id="dt-phases"></div>
+    <div class="note-box"><strong>One team, one question:</strong> Every inquiry unit opens with a single driving question the whole team investigates together. Younger students bring fresh curiosity; older students bring deeper research skills and take on leadership roles in the design phases. Both are essential.</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="fw-section">
+    <div class="fw-section-title">How subjects integrate inside each unit</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:9px" id="subject-roles"></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="fw-section">
+    <div class="fw-section-title">Term-by-term inquiry overview</div>
+    <div id="term-inquiries"></div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════ ASSESSMENT ═══════════════════ -->
+<div id="view-assessment" class="view">
+  <div class="note-box"><strong>One team, one approach to assessment:</strong> Because everyone works from the same driving question and the same Daily 5 / Math Daily 3 structure, assessment centres on each learner's growth and curricular competencies — not grade-level benchmarks that separate teammates. BC Learning Pathways progressions are a teacher tool for identifying precise next steps, not for labelling students.</div>
+
+  <div class="fw-section-title" style="font-family:'Fraunces',serif;font-size:18px;font-weight:500;margin-bottom:1rem;padding-bottom:.6rem;border-bottom:0.5px solid var(--border)">Reporting calendar</div>
+  <div class="term-timeline" id="term-timeline"></div>
+
+  <div class="fw-section-title" style="font-family:'Fraunces',serif;font-size:18px;font-weight:500;margin-bottom:1rem;padding-bottom:.6rem;border-bottom:0.5px solid var(--border)">Assessment tools</div>
+  <div class="assess-grid" id="assess-grid"></div>
+</div>
+
+</div><!-- /.main -->
+
+<script>
+/* ════════════════════════════ DATA ════════════════════════════ */
+const months = [
+  {name:"September",dates:"Sept 2–26, 2026",term:1,
+   inquiry:"Unit 1 launch — This land is our land",
+   inqDetail:"First Peoples, place & the natural world. Ecosystem walks, land acknowledgement, oral stories from local Nations. The team establishes its inquiry identity and shared norms.",
+   lit:"Launch Daily 5: build stamina starting with Read to Self. CAFE goal-setting conferences begin. First individual reading goals set.",
+   math:"Math Daily 3 launch — Math by Myself first. Place value review and multiplication fluency warm-up. Team establishes Math with Someone norms.",
+   phys:"Outdoor land walks. Establishing PHE routines. Land-based movement games.",
+   arts:"First Peoples art forms — nature-inspired process art. Respond to oral stories through drama.",
+   adst:"Design thinking intro — what is making? Design cycle poster co-created with the team.",
+   bigIdea:"Who are we and where do we belong?"},
+  {name:"October",dates:"Oct 1–31, 2026",term:1,
+   inquiry:"Habitats & living things / First Peoples & BC land",
+   inqDetail:"Ecosystem field study — observe, sketch, and classify local species. Research a local Nation's relationship with a specific place and its governance traditions.",
+   lit:"CAFE whole-group lessons: Comprehension — ask questions, make connections. Non-fiction anchor texts on BC ecosystems. Literature circles launch.",
+   math:"Place value to 1 000 000. Multiplication and division fluency. Math with Someone card games and partner challenges.",
+   phys:"Outdoor ecosystem observation walks. Nature journalling. PHE cooperative games with cultural connections.",
+   arts:"Ecosystem mural — large-scale collaborative visual art. Drama: oral story retelling in groups.",
+   adst:"Design challenge: build a habitat diorama using the full design cycle. Peer critique.",
+   bigIdea:"How are living things connected to each other and to the land?"},
+  {name:"November",dates:"Nov 3–28, 2026",term:1,
+   inquiry:"Light & sound investigation / BC history begins",
+   inqDetail:"Properties of light and sound through hands-on labs. Introduction to BC's colonial history, European contact, and the fur trade — multiple perspectives including First Peoples.",
+   lit:"CAFE: Accuracy — use word parts (trans-, re-, ab-) to decode science vocabulary. Work on Writing: lab report genre. Word Work: morphology focus.",
+   math:"Fractions and decimals introduction. Fraction circles and manipulatives. Math Writing: explain your fraction strategy.",
+   phys:"Sensory awareness activities. Sound and movement games. Mindfulness and body awareness.",
+   arts:"Prism paintings, colour mixing with light. Music: compose a short piece with home-made instruments.",
+   adst:"ADST design challenge: build a working instrument from recycled materials. Document the design and test process.",
+   bigIdea:"How do energy and matter behave, and how can we investigate them?"},
+  {name:"December",dates:"Dec 1–19, 2026",term:1,
+   inquiry:"Term 1 synthesis — share and reflect",
+   inqDetail:"Consolidate Term 1 inquiry. Team shares field journals, habitat models, and light/sound investigations. Begin Term 1 portfolio reflection. Celebrate learning together.",
+   lit:"Literature circles: independent reading celebration. CAFE goal reflection cards. Read Aloud finale chosen by the team.",
+   math:"Patterns and algebraic thinking. Financial literacy intro — Canadian coins and bills. Math with Someone games week.",
+   phys:"Cooperative winter games. Mindfulness and wellness transition activities.",
+   arts:"Winter process art studio. Performance share — instruments, songs, and drama.",
+   adst:"Evaluate and improve designs from Term 1. Peer critique using design vocabulary.",
+   bigIdea:"What did we learn about belonging, place, and the natural world?"},
+  {name:"January",dates:"Jan 5–30, 2027",term:2,
+   inquiry:"Ecosystems, energy & change — Unit 2 launch",
+   inqDetail:"Biodiversity and food webs in BC ecosystems. Renewable vs non-renewable energy — design a prototype (wind turbine or solar collector). Connect to BC's environmental decisions.",
+   lit:"CAFE: Comprehension — synthesize multiple texts. Persuasive writing genre begins. Literature circles: paired fiction and non-fiction on nature and change.",
+   math:"Decimals to hundredths and thousandths. Operations with decimals. Data collection linked to ecosystem observations.",
+   phys:"Outdoor stewardship day. PHE: healthy active living in natural environments.",
+   arts:"Environmental art — large-scale visual response to ecosystem data and change.",
+   adst:"Renewable energy design challenge: wind turbine or solar collector prototype. Empathize, define, ideate, prototype, test.",
+   bigIdea:"How do living systems stay in balance, and what happens when they are disrupted?"},
+  {name:"February",dates:"Feb 2–27, 2027",term:2,
+   inquiry:"BC resources & environmental decisions",
+   inqDetail:"Case study — BC salmon and old-growth forests. Multiple perspectives including First Peoples land rights and governance. Who decides, and why does it matter?",
+   lit:"CAFE: Expand Vocabulary — domain-specific environmental terms. Work on Writing: persuasive essay on a real BC environmental issue.",
+   math:"Geometry — angles, triangles, symmetry, transformations, and coordinate grid. Math Writing: explain a geometric pattern or transformation.",
+   phys:"Mental wellness: managing complexity and competing values. Cooperative outdoor challenge course.",
+   arts:"Drama: Hot Seat — take the perspective of a BC resource stakeholder (fisher, forester, First Nations leader, government official).",
+   adst:"Design a sustainable school improvement. Present proposal with supporting evidence to the class.",
+   bigIdea:"Who gets to decide how we use the land, and why does it matter?"},
+  {name:"March",dates:"Mar 2–27, 2027",term:2,
+   inquiry:"People on the move — contact, change & Canadian identity",
+   inqDetail:"European contact and BC's colonial history, immigration waves and multiculturalism — studied as one connected story. Primary sources, oral histories, family stories. No one's story is separated.",
+   lit:"Historical fiction literature circles. Primary source analysis. Work on Writing: historical narrative from a chosen perspective, or persuasive letter about a historical injustice.",
+   math:"Measurement — area, perimeter, volume. Data: mean, median, mode. Math Writing: analyse historical population data.",
+   phys:"Cooperative games from diverse cultural traditions. Discussion on inclusion and fair play.",
+   arts:"Visual art response to a historical photograph. Songs and music from the cultural traditions studied.",
+   adst:"Create a timeline display or digital map of movement, migration, and change across Canadian history.",
+   bigIdea:"How have people's movements shaped who we are as Canadians?"},
+  {name:"April",dates:"Apr 6–30, 2027",term:3,
+   inquiry:"Weather, climate & our changing planet — Unit 3 launch",
+   inqDetail:"Set up a class weather station — collect and record daily data over four weeks. Map Canada's climate regions and connect findings to regional identity and BC geography.",
+   lit:"CAFE: Comprehension — evaluate the credibility of sources. Scientific report writing genre. Read and analyse news articles on climate using author's purpose strategies.",
+   math:"Line graphs from four weeks of weather data. Calculate mean, median, mode. Math Writing: describe the trend in our temperature data and what it tells us.",
+   phys:"Outdoor expedition connecting weather observation to physical health and active living.",
+   arts:"Weather photography and mixed media project. Respond to climate data through visual art.",
+   adst:"Design and build a weather instrument (anemometer or rain gauge). Coding extension: simple weather data tracker.",
+   bigIdea:"How is our planet changing, and what is our responsibility?"},
+  {name:"May",dates:"May 4–29, 2027",term:3,
+   inquiry:"Our Canada — capstone exhibition begins",
+   inqDetail:"Each team member chooses a driving question connecting their year's learning to their Canadian identity. Research, write, design, and begin creating an exhibition piece.",
+   lit:"The capstone research report is the Work on Writing project. CAFE conferring focuses on synthesis and clarity of argument. Oral presentation rehearsal happens in Read to Someone.",
+   math:"Financial literacy: budget the exhibition display. Ratio and proportional reasoning. Math with Someone: peer-review each other's math displays before the exhibition.",
+   phys:"Wellness and personal growth reflection. Healthy transitions — building strengths for next year.",
+   arts:"Each team member creates one visual, dramatic, or musical piece for the exhibition.",
+   adst:"Design and build the interactive element or model for your display. Iterate based on peer feedback using the design cycle.",
+   bigIdea:"What does it mean to belong to Canada, and what will I contribute?"},
+  {name:"June",dates:"Jun 1–25, 2027",term:3,
+   inquiry:"Our Canada exhibition & year celebration",
+   inqDetail:"Present to families, community members, and younger students. Student-led portfolio conferences. Career Ed: write a 'learning portrait' — who am I as a learner, what are my strengths, what comes next?",
+   lit:"Independent reading celebration. Final CAFE goal reflection and portfolio completion. Read Aloud finale — the team chooses the book.",
+   math:"Math portfolio consolidation. Financial literacy project showcase. Math with Someone favourite games tournament.",
+   phys:"Cooperative games celebration. End-of-year outdoor adventure day.",
+   arts:"Exhibition performance element. Team celebration — music, art, and movement.",
+   adst:"Final exhibition presented to the community. Peer appreciation and reflection circle.",
+   bigIdea:"Celebration: look how far we have come together."}
+];
+
+const weekRows = [
+  {time:"8:30–9:00", cls:"wt-morn", title:"Morning meeting", subs:["Community circle, land acknowledgement, goal-setting","Inquiry question of the week, word of the day","Writing warm-up, numeracy problem of the day","Week check-in, inquiry progress share","Week reflection, goal check-in, celebrations"]},
+  {time:"9:00–10:30", cls:"wt-lit", title:"Literacy block", subs:["Whole-group CAFE lesson (15 min) → Daily 5 rounds ×2–3 + conferring","CAFE strategy lesson → Daily 5 rounds + guided reading group","Writing focus lesson → Work on Writing + Read to Self + Word Work","Read to Someone / Listen to Reading → CAFE conferring + guided reading","Independent reading celebration / Read Aloud + catch-up choice"]},
+  {time:"10:30–10:45", cls:"wt-break", title:"Break", subs:["","","","",""]},
+  {time:"10:45–11:45", cls:"wt-math", title:"Math block", subs:["Mini-lesson (10 min) → Math Daily 3 ×2 rounds + small group","Mini-lesson → Math Daily 3 rounds + conferring","Math Writing focus → Math by Myself + Math with Someone","Mini-lesson → all 3 Daily 3 choices + small group pull-out","Math with Someone games + financial literacy + reflection"]},
+  {time:"11:45–12:30", cls:"wt-break", title:"Lunch & recess", subs:["","","","",""]},
+  {time:"12:30–2:00", cls:"wt-inq", title:"Integrated inquiry", subs:["Launch / investigation — Science or Socials driving question","Investigation / experiment / making — science or socials focus","Socials / ADST / Career Ed — research, design, making","Arts / PHE / wellness connections to inquiry theme","Inquiry share — present week's work, peer feedback"]},
+  {time:"2:00–2:30", cls:"wt-phys", title:"PHE / arts", subs:["Land-based movement or cooperative games","Arts integration — visual art, music, or drama","PHE — outdoor education, nature connection","Arts — process studio, dedicated creative work","PHE — cooperative games and team building"]},
+  {time:"2:30–3:00", cls:"wt-break", title:"Closure & reflection", subs:["Portfolio check-in, self-assessment journals","Peer sharing and debrief","Self-assessment journals, goal update","Peer feedback circle","Portfolio update, set goals for next week"]}
+];
+const weekDays = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+
+const d5Data = [
+  {name:"Read to self", color:"var(--lit-mid)", desc:"Independent reading at self-selected level. Builds stamina, fluency, and love of reading. Teacher confers 1:1 using CAFE goals.", tags:["Every day","20–25 min rounds"]},
+  {name:"Read to someone", color:"var(--lit-mid)", desc:"Partner reading for fluency and comprehension. Mixed-age pairs support mentorship across the whole team. 'Check your partner' and 'I read, you read' strategies.", tags:["3–4× weekly","Mixed-age pairs"]},
+  {name:"Listen to reading", color:"var(--lit-mid)", desc:"Audio books, read-alouds, and podcasts. Builds vocabulary and models fluent reading. Anchor texts linked to the inquiry unit wherever possible.", tags:["2–3× weekly","Inquiry-linked texts"]},
+  {name:"Work on writing", color:"var(--lit-mid)", desc:"Students write toward personal CAFE goals. Genre shifts with the inquiry unit — field journals, research reports, persuasive essays, poetry, narrative. Writing folders hold all drafts.", tags:["Every day","Genre follows inquiry"]},
+  {name:"Word work", color:"var(--lit-mid)", desc:"Spelling patterns, morphology (Greek and Latin roots), vocabulary from inquiry texts, word sorts. Differentiated by readiness across the team — not by grade.", tags:["Every day","Readiness-based"]}
+];
+
+const cafeData = [
+  {letter:"C", name:"Comprehension", cls:"cafe-C", color:"var(--lit)", bg:"var(--lit-bg)", border:"#AFA9EC", strats:"Think aloud • Make connections • Visualize • Ask questions • Determine importance • Infer & predict • Synthesize • Use text structure"},
+  {letter:"A", name:"Accuracy", cls:"cafe-A", color:"var(--phys)", bg:"var(--phys-bg)", border:"#5DCAA5", strats:"Cross-check meaning, structure & visual • Use word parts (roots, affixes) • Back up and re-read • Chunk words & phrases"},
+  {letter:"F", name:"Fluency", cls:"cafe-F", color:"var(--amber)", bg:"var(--amber-bg)", border:"#EF9F27", strats:"Read with expression • Adjust rate • Re-read for fluency • Phrase reading • Honour punctuation"},
+  {letter:"E", name:"Expand vocabulary", cls:"cafe-E", color:"var(--arts)", bg:"var(--arts-bg)", border:"#ED93B1", strats:"Use context clues • Use word parts • Use resources • Activate prior knowledge • Synonyms & antonyms"}
+];
+
+const m3Data = [
+  {name:"Math by myself", color:"var(--math-mid)", desc:"Independent practice toward a personal math goal — problem sets, solo games, fact fluency, number journals. Differentiated by readiness. Teacher confers 1:1 or pulls a small group during this time.", tags:["Every day","Goal-driven","Readiness-based"]},
+  {name:"Math writing", color:"var(--math-mid)", desc:"Students explain their thinking in writing — math journals, strategy explanations, word problem write-ups, error analysis. Connects numeracy to literacy. Prompts linked to the inquiry unit wherever possible.", tags:["3–4× weekly","Inquiry-linked prompts","Portfolio evidence"]},
+  {name:"Math with someone", color:"var(--math-mid)", desc:"Partner or small-group games, collaborative problem-solving, and peer teaching. Mixed-age partners across the team. Activities rotate each unit — fractions games, data investigations, geometry challenges, financial literacy tasks.", tags:["Every day","Mixed-age pairs","Rotating activities"]}
+];
+
+const dtPhases = [
+  {num:"1", name:"Wonder", q:"What do we notice? What do we wonder?", bg:"#EAF3DE", color:"#27500A"},
+  {num:"2", name:"Empathize", q:"Who is affected? What do they need?", bg:"#E6F1FB", color:"#0C447C"},
+  {num:"3", name:"Investigate", q:"What evidence do we have? What do experts say?", bg:"#FAEEDA", color:"#633806"},
+  {num:"4", name:"Ideate", q:"What could we create or do?", bg:"#FBEAF0", color:"#72243E"},
+  {num:"5", name:"Make & test", q:"Does it work? What do others think?", bg:"#FAECE7", color:"#712B13"},
+  {num:"6", name:"Share & reflect", q:"What did we learn? What changed?", bg:"#E1F5EE", color:"#085041"}
+];
+
+const subjectRoles = [
+  {name:"Science", color:"var(--inq-mid)", bg:"var(--inq-bg)", textColor:"var(--inq)", role:"Provides the phenomena to investigate — the evidence, experiments, and natural world observations that ground the inquiry in reality."},
+  {name:"Social Studies", color:"var(--amber-mid)", bg:"var(--amber-bg)", textColor:"var(--amber)", role:"Provides the human context — who is affected, what are the competing perspectives, how has history shaped this situation?"},
+  {name:"Arts Education", color:"var(--arts-mid)", bg:"var(--arts-bg)", textColor:"var(--arts)", role:"Provides the medium for response — students represent and communicate their understanding through visual art, drama, music, and dance."},
+  {name:"PHE", color:"var(--phys-mid)", bg:"var(--phys-bg)", textColor:"var(--phys)", role:"Provides the embodied connection — land-based movement, wellness, and the physical relationship between people and their environment."},
+  {name:"ADST", color:"var(--adst-mid)", bg:"var(--adst-bg)", textColor:"var(--adst)", role:"Provides the making process — design thinking, prototyping, and building give students a way to create tangible responses to inquiry questions."},
+  {name:"Career Education", color:"#888780", bg:"#F1EFE8", textColor:"#444441", role:"Provides the future lens — who does this work in the world? What strengths am I developing? Where might my curiosity lead me?"}
+];
+
+const termInquiries = [
+  {term:1, color:"var(--t1)", bg:"var(--t1-bg)", label:"Term 1 — Sept–Dec",
+   question:"Who are we and where do we belong? How have people — including First Peoples — shaped this land, and been shaped by it?",
+   units:["Unit 1A: This land is our land — First Peoples, place, and the natural world (Science: habitats & biodiversity; Socials: First Peoples of BC; ADST: habitat design challenge; Arts: First Peoples art and drama)","Unit 1B: Light, sound, and the science of seeing and hearing (Science: properties of light and sound; ADST: instrument design challenge; Arts: prism paintings and composition)"]},
+  {term:2, color:"var(--t2)", bg:"var(--t2-bg)", label:"Term 2 — Jan–Mar",
+   question:"How do living things — and people — depend on each other and adapt to change? What happens when systems are disrupted?",
+   units:["Unit 2A: Ecosystems, energy, and environmental change (Science: food webs and renewable energy; Socials: BC resources and land decisions; ADST: renewable energy prototype; Arts: environmental mural)","Unit 2B: People on the move — contact, change, and Canadian identity (Socials: European contact, immigration, and multiculturalism; Arts: historical drama and visual response; PHE: games from diverse traditions)"]},
+  {term:3, color:"var(--t3)", bg:"var(--t3-bg)", label:"Term 3 — Apr–Jun",
+   question:"What does it mean to belong to a community and a country? How do we — as individuals and as citizens — contribute to something bigger than ourselves?",
+   units:["Unit 3A: Weather, climate, and our changing planet (Science: weather systems; Socials: Canada's regions and climate; ADST: weather station and instruments; PHE: outdoor expedition)","Unit 3B: Our Canada — capstone exhibition (All areas integrated: research, write, design, create, and present to a real audience)"]}
+];
+
+const assessTools = [
+  {icon:"💬", name:"CAFE conferring notes", desc:"Daily 1:1 conferences during Read to Self. Each student holds a personal CAFE goal card. Teacher keeps a conferring binder — running records, anecdotals, next steps. Drives guided reading group formation."},
+  {icon:"✏️", name:"Math writing journals", desc:"Primary evidence of mathematical reasoning. Reviewed weekly during Math Daily 3 conferring. Small groups are flexibly formed based on what journals reveal — not fixed by grade."},
+  {icon:"📁", name:"Inquiry portfolio", desc:"Each team member maintains a portfolio — field notes, investigations, art pieces, writing drafts, and reflections. Assessed against BC curricular competencies, not subject-by-subject checklists."},
+  {icon:"🤝", name:"Self & peer assessment", desc:"Weekly Friday goal check-ins. Students self-assess against co-created criteria. Peer feedback is built into Read to Someone, Math with Someone, and exhibition rehearsal."},
+  {icon:"📋", name:"Reporting & FSA", desc:"Term 1 progress report. Term 2 formal report card with proficiency scales. Term 3 final report and student-led portfolio share. FSA administered early Term 3 per BC Ministry requirements."},
+  {icon:"🌱", name:"BC Learning Pathways", desc:"ELA and Math foundational progressions are a teacher reference for identifying precise next steps in conferring — especially for students needing intervention or extension. A tool, not a label."}
+];
+
+const termTimeline = [
+  {label:"Term 1", dates:"Sept 2 – Dec 19, 2026", color:"var(--t1)", bg:"var(--t1-bg)",
+   items:["Daily 5 and Math Daily 3 launched — stamina building","CAFE goal-setting conferences begin","Ongoing: observation notes, conferring records","End of term: progress report (communication of learning)","Portfolio reflection: Term 1 inquiry work"]},
+  {label:"Term 2", dates:"Jan 5 – Mar 27, 2027", color:"var(--t2)", bg:"var(--t2-bg)",
+   items:["Formal report card with proficiency scales","CAFE individual reading levels assessed","Math Daily 3 goals updated based on Term 1 data","FSA writing sample collected (Gr 4 prep)","Mid-term: student-teacher goal conference"]},
+  {label:"Term 3", dates:"Apr 6 – Jun 25, 2027", color:"var(--t3)", bg:"var(--t3-bg)",
+   items:["FSA administered early April (Gr 4)","Final report card","Student-led portfolio conference with families","Capstone exhibition as culminating performance assessment","Career Ed learning portrait — self-reflection piece"]}
+];
+
+/* ════════════════════════════ RENDER ════════════════════════════ */
+
+let activeMonth = null;
+
+function renderMonths() {
+  const g = document.getElementById('months-grid');
+  g.innerHTML = months.map((m,i) => {
+    const tp = m.term===1?'t1-pill':m.term===2?'t2-pill':'t3-pill';
+    const tl = m.term===1?'Term 1':m.term===2?'Term 2':'Term 3';
+    const shortInq = m.inquiry.length>52 ? m.inquiry.substring(0,49)+'…' : m.inquiry;
+    return `<div class="month-card" id="mc-${i}" onclick="openDetail(${i})">
+      <div class="month-head">
+        <span class="month-name">${m.name}</span>
+        <span class="term-pill ${tp}">${tl}</span>
+      </div>
+      <div class="month-body">
+        <div class="month-unit u-inq">${shortInq}</div>
+        <div class="month-unit u-lit">Daily 5 &amp; CAFE literacy</div>
+        <div class="month-unit u-math">Math Daily 3</div>
+        <div class="month-unit u-phys">PHE &amp; arts integration</div>
+        <div class="month-dates">${m.dates}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openDetail(i) {
+  const m = months[i];
+  if (activeMonth !== null) document.getElementById('mc-'+activeMonth).classList.remove('active');
+  activeMonth = i;
+  document.getElementById('mc-'+i).classList.add('active');
+  document.getElementById('dp-title').textContent = m.name + ' — ' + m.inquiry;
+  document.getElementById('dp-meta').textContent = m.dates;
+
+  const blocks = [
+    {cls:'b-inq', icon:'🌿', label:'Integrated inquiry (Science · Socials · Arts · PHE · ADST · Career Ed)', text:m.inqDetail},
+    {cls:'b-lit', icon:'📖', label:'Daily 5 &amp; CAFE — literacy focus', text:m.lit},
+    {cls:'b-math', icon:'🔢', label:'Math Daily 3 — numeracy focus', text:m.math},
+    {cls:'b-arts', icon:'🎨', label:'Arts integration', text:m.arts},
+    {cls:'b-phys', icon:'🌲', label:'Physical &amp; health education', text:m.phys},
+    {cls:'b-adst', icon:'🔧', label:'ADST &amp; Career Education', text:m.adst}
+  ];
+
+  document.getElementById('dp-grid').innerHTML = blocks.map(b =>
+    `<div class="dp-block ${b.cls}">
+      <div class="dp-block-label">${b.icon} ${b.label}</div>
+      <div class="dp-block-text">${b.text}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('dp-bigidea').innerHTML =
+    `<div class="big-idea-strip"><strong>Big idea this month:</strong> ${m.bigIdea}</div>`;
+
+  const panel = document.getElementById('detail-panel');
+  panel.classList.add('on');
+  panel.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function closeDetail() {
+  document.getElementById('detail-panel').classList.remove('on');
+  if (activeMonth !== null) {
+    document.getElementById('mc-'+activeMonth).classList.remove('active');
+    activeMonth = null;
+  }
+}
+
+function renderWeek() {
+  const g = document.getElementById('week-table');
+  let html = '';
+  html += `<div class="wt-head" style="grid-column:1"></div>`;
+  weekDays.forEach(d => { html += `<div class="wt-head">${d}</div>`; });
+  weekRows.forEach((row, ri) => {
+    html += `<div class="wt-time">${row.time.replace('–','–<br>')}</div>`;
+    row.subs.forEach((sub, di) => {
+      html += `<div class="wt-cell ${row.cls}">
+        <div class="wt-title">${row.title}</div>
+        ${sub ? `<div class="wt-sub">${sub}</div>` : ''}
+      </div>`;
+    });
+  });
+  g.innerHTML = html;
+}
+
+function renderFrameworks() {
+  document.getElementById('d5-cards').innerHTML = d5Data.map(d =>
+    `<div class="fw-card" style="border-top-color:${d.color}">
+      <div class="fw-card-name">${d.name}</div>
+      <div class="fw-card-desc">${d.desc}</div>
+      <div class="fw-tags">${d.tags.map(t=>`<span class="fw-tag">${t}</span>`).join('')}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('cafe-cards').innerHTML = cafeData.map(c =>
+    `<div class="cafe-card" style="background:${c.bg};border-color:${c.border};color:${c.color}">
+      <div class="cafe-letter">${c.letter}</div>
+      <div class="cafe-name">${c.name}</div>
+      <div class="cafe-strats">${c.strats}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('m3-cards').innerHTML = m3Data.map(d =>
+    `<div class="fw-card" style="border-top-color:${d.color}">
+      <div class="fw-card-name">${d.name}</div>
+      <div class="fw-card-desc">${d.desc}</div>
+      <div class="fw-tags">${d.tags.map(t=>`<span class="fw-tag">${t}</span>`).join('')}</div>
+    </div>`
+  ).join('');
+}
+
+function renderInquiry() {
+  document.getElementById('dt-phases').innerHTML = dtPhases.map(p =>
+    `<div class="dt-phase" style="background:${p.bg}">
+      <div class="dt-num" style="background:${p.color};color:#fff">${p.num}</div>
+      <div class="dt-phase-name" style="color:${p.color}">${p.name}</div>
+      <div class="dt-phase-q" style="color:${p.color};opacity:.8">${p.q}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('subject-roles').innerHTML = subjectRoles.map(s =>
+    `<div class="fw-card" style="border-top:3px solid ${s.color};background:${s.bg}">
+      <div class="fw-card-name" style="color:${s.textColor}">${s.name}</div>
+      <div class="fw-card-desc" style="color:${s.textColor};opacity:.85">${s.role}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('term-inquiries').innerHTML = termInquiries.map(t =>
+    `<div style="background:var(--surface);border:0.5px solid var(--border);border-left:4px solid ${t.color};border-radius:var(--radius);padding:1.1rem 1.25rem;margin-bottom:10px">
+      <div style="font-weight:500;font-size:13.5px;margin-bottom:4px;color:${t.color}">${t.label}</div>
+      <div style="font-family:'Fraunces',serif;font-size:14.5px;font-style:italic;color:var(--text);margin-bottom:.75rem;line-height:1.45">"${t.question}"</div>
+      ${t.units.map(u=>`<div style="font-size:12px;color:var(--text-2);padding-left:12px;position:relative;margin-bottom:5px;line-height:1.5"><span style="position:absolute;left:0;color:var(--text-3)">›</span>${u}</div>`).join('')}
+    </div>`
+  ).join('');
+}
+
+function renderAssessment() {
+  document.getElementById('term-timeline').innerHTML = termTimeline.map(t =>
+    `<div class="tt-card">
+      <div class="tt-head" style="background:${t.bg};color:${t.color};border-bottom:0.5px solid var(--border)">${t.label}<br><span style="font-weight:400;font-size:11px;opacity:.8">${t.dates}</span></div>
+      <div class="tt-body">${t.items.map(i=>`<div class="tt-item">${i}</div>`).join('')}</div>
+    </div>`
+  ).join('');
+
+  document.getElementById('assess-grid').innerHTML = assessTools.map(a =>
+    `<div class="assess-card">
+      <div class="assess-icon">${a.icon}</div>
+      <div class="assess-name">${a.name}</div>
+      <div class="assess-desc">${a.desc}</div>
+    </div>`
+  ).join('');
+}
+
+/* ════════════════════════════ NAV ════════════════════════════ */
+function setView(id, btn) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('on'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('on'));
+  document.getElementById('view-'+id).classList.add('on');
+  btn.classList.add('on');
+}
+
+/* ════════════════════════════ INIT ════════════════════════════ */
+renderMonths();
+renderWeek();
+renderFrameworks();
+renderInquiry();
+renderAssessment();
+</script>
+</body>
+</html>
